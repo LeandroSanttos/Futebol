@@ -20,5 +20,6 @@ public class Clube {
     private UUID idClube;
     private String nomeClube;
     private LocalDate dataFundacao;
+    private String paisSede;
     private FederacaoNacional federacaoNacional;
 }

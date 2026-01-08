@@ -7,6 +7,7 @@ import java.time.LocalDate;
 public record CluebeDTO(
         String nomeClube,
         LocalDate dataFundacao,
+        String paisSede,
         FederacaoNacional federacaoNacional
 ) {
 }
