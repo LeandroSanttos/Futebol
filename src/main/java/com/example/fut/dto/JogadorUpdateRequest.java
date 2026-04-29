@@ -1,12 +1,14 @@
 package com.example.fut.dto;
 
-import com.example.fut.model.Clube;
 import com.example.fut.model.enums.Posicao;
+import java.math.BigDecimal;
+import java.util.UUID;
 
-public record JogadorDTO(
+public record JogadorUpdateRequest(
         String nomeJogador,
         String nacionalidade,
         Posicao posicao,
-        Clube clube
+        UUID idClube,
+        BigDecimal valorJogador
 ) {
 }

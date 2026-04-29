@@ -4,8 +4,10 @@ import com.example.fut.model.FederacaoNacional;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
+import java.util.List;
 import java.util.UUID;
 
 @Repository
 public interface FederacaoNacionalRepository extends JpaRepository<FederacaoNacional, UUID> {
+    public List<FederacaoNacional> findByNomeFederacaoNacionalContainingIgnoreCase(String nome);
 }
