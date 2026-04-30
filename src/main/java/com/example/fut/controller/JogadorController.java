@@ -67,7 +67,7 @@ public class JogadorController {
         return ResponseEntity.ok(jogadorService.atualizarJogador(idJogador, request));
     }
 
-    @DeleteMapping("{idJogador}")
+    @DeleteMapping("/{idJogador}")
     public ResponseEntity<Void> excluirJogador(@PathVariable UUID idJogador) {
         jogadorService.excluirJogador(idJogador);
 
